@@ -10,5 +10,5 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.4.3 virtualenv at ~/PycharmProjects/pycharm__flask/pycharm_flask" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.4.2 (sftp://root@192.168.73.58:22/usr/bin/python3)" project-jdk-type="Python SDK" />
 </project>
