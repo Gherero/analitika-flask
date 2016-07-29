@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Bootstrap 101 Шаблон</title>
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <h1>Привет! Я Bootstrap...</h1>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    {% for message in messages %}
+    <li>{{message}}<br></li>
+   {% endfor %}
+  </body>
+</html>
