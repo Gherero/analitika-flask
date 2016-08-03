@@ -4,13 +4,40 @@
     <title>Bootstrap 101 Шаблон</title>
     <!-- Bootstrap -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
-  </head>
-  <body>
-    <h1>Привет! Я Bootstrap...</h1>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+ <div class="container">
+  <h2>Condensed Table</h2>
+  <p>The .table-condensed class makes a table more compact by cutting cell padding in half:</p>
+
+     <form name="add-url" method="post">
+       <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-success" type="submit">Добавить</button>
+                </span>
+                <input name="url" type="text" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+       </div><!-- /.row -->
+     </form>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Ссылки</th>
+      </tr>
+    </thead>
+    <tbody>
     {% for message in messages %}
-    <li>{{message}}<br></li>
-   {% endfor %}
+      <tr>
+        <td>{{message}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
   </body>
 </html>
