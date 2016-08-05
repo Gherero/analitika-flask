@@ -9,35 +9,59 @@
   </head>
   <body>
  <div class="container">
-  <h2>Condensed Table</h2>
-  <p>The .table-condensed class makes a table more compact by cutting cell padding in half:</p>
-
-     <form name="add-url" method="post">
-       <div class="row">
-            <div class="col-lg-6">
+  <h2>Списки блокировок</h2>
+  <p>Списки содержат ранжированные по категориям сайты которые подвергаются блокировке в Вашей сети.</p>
+    <div class="row">
+        <div class="col-lg-4">
+            <form name="add-url" method="post">
               <div class="input-group">
                 <span class="input-group-btn">
                   <button class="btn btn-success" type="submit">Добавить</button>
                 </span>
                 <input name="url" type="text" class="form-control">
               </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-       </div><!-- /.row -->
-     </form>
-  <table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Ссылки</th>
-      </tr>
-    </thead>
-    <tbody>
-    {% for message in messages %}
-      <tr>
-        <td>{{message}}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
+            </form>
+            <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th>Ссылки</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for message in messages %}
+                  <tr>
+                    <td>{{message}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <form name="add-url" method="post">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-success" type="submit">Добавить</button>
+                </span>
+                <input name="url" type="text" class="form-control">
+              </div><!-- /input-group -->
+            </form>
+            <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th>Ссылки</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for message in messages %}
+                  <tr>
+                    <td>{{message}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </div><!-- /.col-lg-6 -->
+ </div><!-- /.row -->
   </body>
 </html>

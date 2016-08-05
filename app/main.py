@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-
+import time
 app = Flask(__name__)
 
 
@@ -34,10 +34,14 @@ def panel():
         print("type url ",type(url))
         print(url_list)
         if not url in url_list:
+            file_list_version = open("/var/www/html/black_lists/version" , "w")
             file_url = open("/var/www/html/black_lists/porno", "a")
             file_url.write(url+'\n')
             print(url)
+            file_list_version.writelines(time.time())
             file_url.close()
+            file_list_version.close()
+
         else:
             print('false')
 
