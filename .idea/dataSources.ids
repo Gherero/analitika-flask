@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - @192.168.73.160" uuid="f993cabc-8d9f-427f-893a-4e789914fd37">
+    <database-info product="MySQL" version="5.5.50-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="    Пупкин">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="   _"/>
+      <schema id="3" name=" _"/>
+      <schema id="4" name="$"/>
+      <schema id="5" name="$777"/>
+      <schema id="6" name="andrei">
+        <visible>1</visible>
+      </schema>
+      <schema id="7" name="denis"/>
+      <schema id="8" name="information_schema"/>
+      <schema id="9" name="kira">
+        <visible>1</visible>
+      </schema>
+      <schema id="10" name="My DB"/>
+      <schema id="11" name="mysql"/>
+      <schema id="12" name="my_db"/>
+      <schema id="13" name="performance_schema"/>
+      <schema id="14" name="roma"/>
+      <schema id="15" name="shop"/>
+      <schema id="16" name="shop2"/>
+      <schema id="17" name="vova"/>
+      <schema id="18" name="_"/>
+      <schema id="19" name="_   _"/>
+      <schema id="20" name="Пупкин"/>
+      <table id="21" parent="6" name="tovar"/>
+      <column id="22" parent="21" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="23" parent="21" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="24" parent="21" name="count">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="25" parent="21" name="price">
+        <mandatory>1</mandatory>
+        <data-type>decimal(15,2)|0</data-type>
+      </column>
+      <column id="26" parent="21" name="date_m">
+        <mandatory>1</mandatory>
+        <data-type>date|0</data-type>
+      </column>
+      <column id="27" parent="21" name="description">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="28" parent="21" name="made_by">
+        <data-type>varchar(50)|0</data-type>
+        <default-expression>&apos;Китай&apos;</default-expression>
+      </column>
+      <key id="29" parent="21" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
